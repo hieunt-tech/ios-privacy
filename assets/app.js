@@ -1,4 +1,4 @@
-// Language picking for the Inkspace site.
+// Language picking for the Penote site.
 // English lives in the HTML itself (so the pages read fine without JavaScript); other languages
 // come from strings.js. Choice order: ?lang=xx → saved choice → browser languages → English.
 (function () {
@@ -66,7 +66,7 @@
       } catch (e) { /* keep the English date */ }
     });
     var titleKey = document.body.dataset.title;
-    document.title = titleKey && lang !== "en" ? t(lang, titleKey) + " · Inkspace" : en.__title;
+    document.title = titleKey && lang !== "en" ? t(lang, titleKey) + " · Penote" : en.__title;
     var select = document.getElementById("lang");
     if (select) select.value = lang;
   }
